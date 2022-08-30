@@ -1,5 +1,6 @@
 baseUrl = "http://localhost:3000/";
 addButton = document.getElementById("addbutton");
+document.getElementById("UL").style.listStyle = "decimal inside";
 
 const removeUl = () => {
   const removeChilds = document.getElementById("UL");
@@ -26,7 +27,7 @@ const getListOfTasks = async function () {
 const doSomethingWithData = async function () {
   const tasks = await getListOfTasks();
   const UL = document.querySelector(".ULL");
-  const taken = tasks.map((persoon) => persoon.description);
+  const taken = tasks.map((taak) => taak.description);
   taken.forEach(function (text, item) {
     const newli = document.createElement("li");
     newli.innerHTML = text;
@@ -34,10 +35,9 @@ const doSomethingWithData = async function () {
     document.body.appendChild(newli);
   });
 };
+
 const InputFunction = function () {
   document
-
-  
     .getElementsByName("searchBar")[0]
     .addEventListener("change", doThing);
 };
