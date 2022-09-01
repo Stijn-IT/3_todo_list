@@ -5,8 +5,8 @@
 
 body {
   margin-top: 10px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 25%;
+  margin-left: 25%;
   background-color: black;
   color: white;
 }
@@ -14,12 +14,13 @@ body {
 #searchBar {
   margin-top: 40px;
   margin-right: 30px;
-  width: 80%;
+  width: 70%;
   height: 32px;
   border-radius: 3px;
   border: 1px solid #eaeaea;
   padding: 5px 10px;
   font-size: 12px;
+  text-align: center;
 }
 
 #addbutton {
@@ -31,6 +32,10 @@ body {
 h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
 }
 
 .grid {
@@ -54,38 +59,30 @@ h1 {
   grid-area: 3 / 1 / 4 / 2;
 }
 
-.ULL {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+ul {
   padding-top: 30px;
 }
 
-.ULL li {
+ul li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
-@media screen and (max-width: 600px) {
+ul li span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+ul li i {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
   body {
     margin-top: 10px;
-    margin-left: 10px;
-  }
-  .label {
-    font-size: 11px;
-  }
-
-  .menu nav {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .menu nav label {
-    display: block;
-  }
-  .menu nav label input {
-    display: block;
-    margin-left: 2px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

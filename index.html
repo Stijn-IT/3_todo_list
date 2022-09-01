@@ -7,12 +7,16 @@
     <title>Todo Stijn</title>
     <link rel="stylesheet" href="style.css" />
     <script defer type="text/javascript" src="api-client.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <div class="grid">
       <div class="header">
-        <h1>Todo list</h1>
+        <h1>Taken en reminders</h1>
       </div>
 
       <div id="searchWrapper" class="zoekbalk">
@@ -20,13 +24,13 @@
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="New task"
+          placeholder="Typ hier uw taak of reminder"
         />
-        <button type="sumbit"  id="addbutton" name="name" >Add</button>
+        <button type="sumbit" id="addbutton" name="name">Add</button>
       </div>
-      
+
       <div class="main-list" id="main-list">
-        <h2>Tasks:</h2>
+        <h2>Lijst taken en reminders:</h2>
         <ul id="UL" class="ULL"></ul>
       </div>
     </div>
